@@ -1,0 +1,14 @@
+本地端：安装好Git工具后
+1、在想要关联的仓库(文件夹)下 执行 “右键 -> Git Bash Here”
+2、配置关联信息：GitHub账户名称和注册邮箱
+	git config --global user.name "TjyGitHub1805099"
+	git config --global user.email "912709177@qq.com"
+	git init
+3、执行:ssh -keygen生成一对rsa key包含私钥和公钥
+
+网页端：
+1、点击“➕”添加仓库repository并命名
+
+执行：本地端
+1、git pull(更新本地从服务器)
+2、git push(推送本地至服务器)
