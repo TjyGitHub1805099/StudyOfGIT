@@ -1,5 +1,3 @@
-参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
-
 1、管理修改
 	a、git add xxx
 	b、git commit -m "yyy"
@@ -14,3 +12,4 @@
 	f、git rm 文件名
 	总结：e、删除本地文件 f、删除版本库文件
 
+参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
