@@ -1,4 +1,3 @@
-参考网址：https://www.jianshu.com/p/a3b4f61d4747
 前置条件：在本地端安装Git工具
 
 操作步骤：
@@ -8,3 +7,5 @@
 	git config --global user.email "912709177@qq.com"
 	git init
 3、执行:ssh -keygen生成一对rsa key包含私钥和公钥（位于C:\Users\computer_name\.ssh）
+
+参考网址：https://www.jianshu.com/p/a3b4f61d4747
