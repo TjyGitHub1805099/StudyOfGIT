@@ -1,0 +1,2 @@
+1.adb shell
+2.adb logcat | grep ioc_trace
