@@ -1,5 +1,11 @@
 1.adb shell
 2.adb logcat | grep ioc_trace
 
-adb root
-adb remount
+
+attention:
+	if logcat not printf at adb window,please do this
+	1.stop logd
+	2.su
+	3.logcat -g 10m
+	4.start logd
+	5.logcat | grep ioc_trac
