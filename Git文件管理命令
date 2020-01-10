@@ -44,5 +44,10 @@
 			2、再用命令b，拉最新版本至本地库
 	场景二、如果远程库版本被回退了，并且有提交新的版本，如何更新本地？
 			1、使用命令b，拉最新版本至本地库、并且会与本地merge
+			
+6、初始化
+	a、git init//对当前文件夹进行git初始化，生成.git配置目录
+	b、git remote -v //显示远程仓库的基本信息 
+	c、git remote show origin //显示远程仓库的详细信息，包括哪些分支
 
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
