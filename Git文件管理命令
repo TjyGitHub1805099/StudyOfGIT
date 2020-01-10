@@ -12,5 +12,10 @@
 	e、rm 文件名
 	f、git rm 文件名
 	总结：e、删除本地文件 f、删除版本库文件
+	
+4、更新分支
+	a、git fetch origin
+	总结：如果远程库上有某人新添加了分支、使用此指令后、git pull命令才能更新下来
+
 
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
