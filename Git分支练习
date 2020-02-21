@@ -14,7 +14,7 @@
 
 
 
-1、分支管理master中添加
+1、分支管理maste aaa中添加
 	查看分支：git branch
 	创建分支：git checkout -b 分支名
 	切换分支：git checkout 分支名
@@ -27,4 +27,7 @@
 		继续向前查看：回车键 退出：q
 	git log --oneline
 		查看记录每行显示
+	
+	
+	
 	
