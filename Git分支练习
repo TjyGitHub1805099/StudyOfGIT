@@ -9,3 +9,22 @@
 5、创建 问题分支 problem-55 并c  ommi  t
 
 6、创建 紧急分支 hotfix 并c(f2分支在这里修改)ommi(e2分支在这里修改)t
+
+
+
+
+
+1、分支管理
+	查看分支：git branch
+	创建分支：git checkout -b 分支名
+	切换分支：git checkout 分支名
+	合并分支：git merge 分支名
+	合并冲突查询：git mergetool
+	分支差异：git log --left-right 分支1...分支2 
+	删除分支：git branch -d 分支名
+2、历史记录
+	查看所有：git log
+		继续向前查看：回车键 退出：q
+	git log --oneline
+		查看记录每行显示
+	

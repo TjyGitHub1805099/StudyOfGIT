@@ -1,4 +1,39 @@
-1、管理修改
+1、初始化
+	a、git init//对当前文件夹进行git初始化，生成.git配置目录
+	b、git remote -v //显示远程仓库的基本信息 
+	c、git remote show origin //显示远程仓库的详细信息，包括哪些分支
+			
+2、分支管理
+	更新分支：
+		a、git fetch origin
+		b、git pull origin
+		场景一、如果远程库上有某人新添加了分支？
+			1、使用命令a，访问远程仓库，从中拉取所有你还没有的数据
+			2、再用命令b
+	查看分支：git branch
+	创建分支：git checkout -b 分支名
+	切换分支：git checkout 分支名
+	合并分支：git merge 分支名
+	合并冲突查询：git mergetool
+	分支差异：git log --left-right 分支1...分支2 
+	删除分支：git branch -d 分支名
+	
+3、历史记录
+	查看所有：git log
+		继续向前查看：回车键 退出：q
+	git log --oneline
+		查看记录每行显示
+		
+4、版本回退
+	a、git reset --hard origin
+	b、git pull origin
+	场景一：如果远程库版本被回退了，如何更新本地？
+			1、使用命令a，来保持与远程库一致
+			2、再用命令b，拉最新版本至本地库
+	场景二、如果远程库版本被回退了，并且有提交新的版本，如何更新本地？
+			1、使用命令b，拉最新版本至本地库、并且会与本地merge
+	
+5、管理修改
 	a、git add xxx
 	b、git commit -m "yyy"
 	c、git commit --amend
@@ -12,7 +47,7 @@
 	场景四、快捷提交？
 			1、使用命令d，添加修改至工作区且提交
 	
-2、撤销修改
+6、撤销修改
 	a、git checkout -- 文件名
 	   git checkout .
 	b、git reset HEAD 文件名
@@ -23,33 +58,13 @@
 			1、使用命令b
 			2、使用命令a
 			
-3、删除文件
+7、删除文件
 	a、rm 文件名
 	b、git rm 文件名
 	场景一、删除本地文件
 			1、使用命令a
 	场景二、删除远程库文件
 			1、使用命令b
-	
-4、更新分支
-	a、git fetch origin
-	b、git pull origin
-	场景一、如果远程库上有某人新添加了分支？
-			1、使用命令a，访问远程仓库，从中拉取所有你还没有的数据
-			2、再用命令b
 
-5、版本回退
-	a、git reset --hard origin
-	b、git pull origin
-	场景一：如果远程库版本被回退了，如何更新本地？
-			1、使用命令a，来保持与远程库一致
-			2、再用命令b，拉最新版本至本地库
-	场景二、如果远程库版本被回退了，并且有提交新的版本，如何更新本地？
-			1、使用命令b，拉最新版本至本地库、并且会与本地merge
 			
-6、初始化
-	a、git init//对当前文件夹进行git初始化，生成.git配置目录
-	b、git remote -v //显示远程仓库的基本信息 
-	c、git remote show origin //显示远程仓库的详细信息，包括哪些分支
-
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
