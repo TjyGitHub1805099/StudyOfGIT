@@ -2,7 +2,7 @@
 
 2、master 添加改动 并commit但未push
 
-3、创建 问题分支 problem-53 并commit
+3、创建 问题分支 problem-53 并commi(hotfix修改内容)t
 
 4、创建 紧急分支 hotfix-01 并commi(hf_powermode更改处)t(f_UG8V=UG8V更改处)
 
