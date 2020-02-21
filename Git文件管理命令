@@ -69,5 +69,10 @@
 	场景二、删除远程库文件
 			1、使用命令b
 
+8、存储本地仓库
+	git stash
+	
+9、查看某人提交记录
+	git log --author=“某人”
 			
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
