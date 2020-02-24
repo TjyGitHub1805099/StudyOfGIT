@@ -2,7 +2,8 @@
 	a、git init//对当前文件夹进行git初始化，生成.git配置目录
 	b、git remote -v//显示远程仓库的基本信息 
 	c、git remote show origin//显示远程仓库的详细信息，包括哪些分支
-			
+		
+		
 2、分支管理
 	https://www.cnblogs.com/niit-soft-518/p/10396357.html
 	https://www.cnblogs.com/mkl34367803/p/9196563.html	
@@ -21,6 +22,7 @@
 	合并冲突查询：git mergetool
 	分支差异：git log --left-right 分支1...分支2 
 	删除分支：git branch -d 分支名
+	
 	
 3、历史记录
 	git log//查看所有提交过的版本信息
@@ -44,6 +46,7 @@
 			1、使用命令b，拉最新版本至本地库、并且会与本地merge
 	场景三、回退一个版本,不清空暂存区,将已提交的内容恢复到暂存区,不影响原来本地的文件(未提交的也不受影响)
 			使用命令c
+
 	
 5、管理修改
 	a、git add -a//添加所有变化
@@ -61,7 +64,12 @@
 	场景四、快捷提交？
 			1、使用命令d，添加修改至工作区且提交
 	
-6、撤销修改
+	
+6、查看修改
+	a、git status//工作区更改情况
+
+
+7、撤销修改
 	a、git checkout -- 文件名
 	   git checkout .
 	b、git reset HEAD 文件名
@@ -72,7 +80,7 @@
 			1、使用命令b
 			2、使用命令a
 			
-7、删除文件
+8、删除文件
 	a、rm 文件名
 	b、git rm 文件名
 	场景一、删除本地文件
@@ -80,10 +88,10 @@
 	场景二、删除远程库文件
 			1、使用命令b
 
-8、存储本地仓库
+9、存储本地仓库
 	git stash
 	
-9、查看提交记录
+10、查看提交记录
 	git log//查看所有提交过的版本信息
 	git log --oneline//显示版本号和提交时的备注信息
 	git log --author=“某人”//查看某人提交记录
