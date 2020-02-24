@@ -33,7 +33,8 @@
 
 		
 4、版本回退
-	a、git reset --hard origin
+	a、git reset --hard origin//回退整个树
+	   git reset --hard 版本号 文件名//只回退单一文件
 	b、git pull origin
 	c、git reset --soft 版本id
 	场景一：如果远程库版本被回退了，如何更新本地？
