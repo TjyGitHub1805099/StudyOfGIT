@@ -106,5 +106,9 @@
 	
 9、查看某人提交记录
 	git log --author=“某人”
+	
+	
+dev:开内容
+	
 			
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
