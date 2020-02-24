@@ -1,16 +1,20 @@
 1、初始化
 	a、git init//对当前文件夹进行git初始化，生成.git配置目录
-	b、git remote -v //显示远程仓库的基本信息 
-	c、git remote show origin //显示远程仓库的详细信息，包括哪些分支
+	b、git remote -v//显示远程仓库的基本信息 
+	c、git remote show origin//显示远程仓库的详细信息，包括哪些分支
 			
 2、分支管理
+	https://www.cnblogs.com/niit-soft-518/p/10396357.html
+	https://www.cnblogs.com/mkl34367803/p/9196563.html	
 	更新分支：
 		a、git fetch origin
 		b、git pull origin
 		场景一、如果远程库上有某人新添加了分支？
 			1、使用命令a，访问远程仓库，从中拉取所有你还没有的数据
 			2、再用命令b
-	查看分支：git branch
+	查看分支：git branch//本地   
+			  git branch -a//远程
+			  git btanch -av//远程+本地
 	创建分支：git checkout -b 分支名
 	切换分支：git checkout 分支名
 	合并分支：git merge 分支名
@@ -19,10 +23,14 @@
 	删除分支：git branch -d 分支名
 	
 3、历史记录
-	查看所有：git log
-		继续向前查看：回车键 退出：q
-	git log --oneline
-		查看记录每行显示
+	git log//查看所有提交过的版本信息
+	git log --oneline//显示版本号和提交时的备注信息
+	git log --author=“某人”//查看某人提交记录
+	git reflog//查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）
+
+	继续查看：Enter键 
+	退出查看：q键
+
 		
 4、版本回退
 	a、git reset --hard origin
@@ -37,10 +45,12 @@
 			使用命令c
 	
 5、管理修改
-	a、git add xxx
-	b、git commit -m "yyy"
+	a、git add -a//添加所有变化
+	   git add -u//添加被修改modified和被删除deleted文件，不包含新建new文件
+	   git add .//添加新建new文件和被修改modified文件，不包含被删除文件
+	b、git commit -m "提交日志"
 	c、git commit --amend
-	d、git commit -a -m "yyy"
+	d、git commit -a -m "提交日志"
 	场景一、添加修改至工作区？
 			1、使用命令a
 	场景二、未发生提交，提交修改至工作区？
@@ -72,7 +82,10 @@
 8、存储本地仓库
 	git stash
 	
-9、查看某人提交记录
-	git log --author=“某人”
+9、查看提交记录
+	git log//查看所有提交过的版本信息
+	git log --oneline//显示版本号和提交时的备注信息
+	git log --author=“某人”//查看某人提交记录
+	git reflog//查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）
 			
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf

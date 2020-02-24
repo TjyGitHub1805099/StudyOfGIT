@@ -1,9 +1,9 @@
-1、若远程仓库有人新添加分支？
-	a、git fetch origin//访问远程仓库，从中拉取所有你还没有的数据
-	b、git pull origin//拉取
+1、若远程仓库他人新添加分支了，如何更新至本地仓库和工作区？
+	a、git fetch origin//从远程仓库 拉取至 本地仓库
+	b、git pull origin//从远程仓库 拉取至 工作区
 
 
-2、若远程库版本被回退了，如何更新本地？
+2、若远程仓库版本被回退了，如何更新至本地？
 	a、git reset --hard origin//来保持与远程库一致
 	b、git pull origin//拉最新版本至本地库
 
