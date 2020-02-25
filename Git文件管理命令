@@ -66,7 +66,8 @@
 	
 	
 6、查看修改
-	a、git status//更改情况包含：工作区是否修改、修改是否添加至暂存区、暂存区是否添加至本地仓库
+	a、git status
+	   包含：工作区是否修改、修改是否添加至暂存区、暂存区是否添加至本地仓库
 	
 	
 
@@ -100,7 +101,7 @@
 			1、使用命令b
 			2、使用命令a
 
-			
+			G
 8、删除文件
 	a、rm 文件名
 	b、git rm 文件名
@@ -117,5 +118,10 @@
 	git log --oneline//显示版本号和提交时的备注信息
 	git log --author=“某人”//查看某人提交记录
 	git reflog//查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）
-			
+	
+
+11、拉取与获取
+	a、git fetch//获取
+	a、git pull origin//拉取=git fetch + git merge
+	
 参考网址：https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf
