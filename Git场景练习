@@ -26,7 +26,7 @@
 	a、git commit --amend
 
 
-场景练习1补充
+场景练习1补充23
 8、添加至工作区并提交？
 	锕、git commit -a -m "日志信息"
 
