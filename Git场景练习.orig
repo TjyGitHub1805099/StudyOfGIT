@@ -26,7 +26,11 @@
 	a、git commit --amend
 
 
-场景练习1补充23你好
+<<<<<<< HEAD
+场景练习1补充23
+=======
+场景练习1补充你好
+>>>>>>> refs/remotes/origin/master
 8、添加至工作区并提交？
 	锕、git commit -a -m "日志信息"
 

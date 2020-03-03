@@ -29,7 +29,7 @@
 	git log --oneline//显示版本号和提交时的备注信息
 	git log --author=“某人”//查看某人提交记录
 	git reflog//查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）
-
+	git diff HEAD..HEAD^ --name-only//只查看当前和上次版本的文件删减记录
 	继续查看：Enter键 
 	退出查看：q键
 
