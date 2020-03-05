@@ -56,4 +56,20 @@
 	|	git reset --hard					|	远程库(push)不撤销、只撤销本地库(commit)及暂存区(add操作)及工作区(changed操作)				|
 	|	git reset --hard 文件a				|	同上，只限于文件a																			|
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-15	|	git stash							|	存储本地库										|											|
+15	|	git stash save “存储日志”			|	存储本地库，带存储日志							|											|
+	|	git stash lish						|	查看stash了那些存储								|											|
+	|	git stash show						|	显示做了哪些改动，默认show第一个存储,如果要显示其他存贮，可添加后缀：stash@{num}，num就是你想查看的第几个stash
+	|	git stash apply						|	应用某个存储,但不会把存储从存储列表中删除，可添加后缀：stash@{num}
+	|	git stash pop						|	恢复之前缓存的工作目录，将缓存堆栈中的对应stash删除，并将对应修改应用到当前的工作目录下，添加后缀：stash@{num}
+	|	git stash drop stash@{num}			|	丢弃stash@{$num}存储，从列表中删除这个存储
+	|	git stash clear						|	删除所有缓存的stash
+
+===========================================================================  实际开发过程 : A ===========================================================================
+参考：https://blog.csdn.net/weixin_44018338/article/details/98881164
+1、	git stash save "my current modified......." //存储当前修改至stash栈区
+	git pull									//拉取最新至工作目录
+2、	git stash pop								//将自己暂存的代码与git pull合并(类似git merge)
+3、 git add xxx
+	git commit -m "提交日志"
+	git push
+	
